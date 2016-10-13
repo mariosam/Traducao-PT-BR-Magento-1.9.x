@@ -1,0 +1,68 @@
+<!--@subject Payment Transaction Failed Reminder @-->
+<!--@vars
+{"var reason":"Transaction Failed Reason",
+"var checkoutType":"Checkout Type",
+"var customerEmail":"Customer Email",
+"var customer":"Customer Name",
+"var items":"Shopping Cart Items",
+"var total":"Total",
+"var billingAddress.format('html')":"Billing Address",
+"var shippingAddress.format('html')":"Shipping Address",
+"var shippingMethod":"Shipping Method",
+"var paymentMethod":"Payment Method",
+"var dateAndTime":"Date and Time of Transaction"}
+@-->
+
+<table>
+    <thead>
+    <tr>
+        <th>Opera&ccedil;&atilde;o de Pagamento Falhou.</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <p>
+                <b>Raz&atilde;o</b><br />
+                {{var reason}}
+            </p>
+            <p>
+                <b>Tipo de Checkout</b><br />
+                {{var checkoutType}}
+            </p>
+            <p>
+                <b>Cliente:</b><br />
+                <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+            </p>
+            <p>
+                <b>Produtos</b><br />
+                {{var items}}
+            </p>
+            <p>
+                <b>Total:</b><br />
+                {{var total}}
+            </p>
+            <p>
+                <b>Endere&ccedil;o de Cobran&ccedil;a:</b><br />
+                {{var billingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Endere&ccedil;o de Entrega:</b><br />
+                {{var shippingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Forma de Entrega:</b><br />
+                {{var shippingMethod}}
+            </p>
+            <p>
+                <b>Forma de Pagamento:</b><br />
+                {{var paymentMethod}}
+            </p>
+            <p>
+                <b>Data e Hora:</b><br />
+                {{var dateAndTime}}
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>

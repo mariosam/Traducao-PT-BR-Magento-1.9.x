@@ -1,0 +1,44 @@
+<!--@subject Welcome, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email",
+"htmlescape var=$customer.password":"Customer Password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Welcome to {{var store.getFrontendName()}}.</h1>
+            <p>Acesse sua conta clicando em <a href="{{store url="customer/account/"}}">Entrar</a> or <a href="{{store url="customer/account/"}}">Minha Conta</a> no alto de nossas p&aacute;ginas, ent&atilde;o informe seu email e senha.</p>
+            <p class="highlighted-text">
+                Utilize as seguintes informa&ccedil;&otilde;es de acesso:<br/>
+                <strong>Email</strong>: {{var customer.email}}<br/>
+                <strong>Senha</strong>: {{htmlescape var=$customer.password}}
+            </p>
+            <p>Quando acessar sua conta, voc&ecirc; poder&aacute;:</p>
+            <ul>
+                <li>Fechar compras com maior agilidade;</li>
+                <li>Acompanhar seus pedidos;</li>
+                <li>Visualizar hist&oacute;rico de pedidos;</li>
+                <li>Alterar informa&ccedil;&otilde;es de conta;</li>
+                <li>Alterar sua senha;</li>
+                <li>Cadastrar novos endere&ccedil;os de entrega (como endere&ccedil;o de familiares e amigos!)</li>
+            </ul>
+            <p>
+                Se voc&ecirc; tiver alguma d&uacute;vida sobre sua conta ou qualquer outra informa&ccedil;&atilde;o do site, n&atilde;o deixe de entrar em contato atrav&eacute;s do email <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                {{depend store_phone}} ou por telefone <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
