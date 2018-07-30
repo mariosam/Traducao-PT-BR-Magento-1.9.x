@@ -82,7 +82,7 @@ UPDATE `eav_attribute` SET `frontend_label`='Criado Em' WHERE `frontend_label`='
 UPDATE `eav_attribute` SET `frontend_label`='Criado Na' WHERE `frontend_label`='Created At';    
 UPDATE `eav_attribute` SET `frontend_label`='Criado na Loja' WHERE `frontend_label`='Created From';    
 UPDATE `eav_attribute` SET `frontend_label`='Design Personalizado' WHERE `frontend_label`='Custom Design';    
-UPDATE `eav_attribute` SET `frontend_label`='Atualização de Leiaute' WHERE `frontend_label`='Custom Layout Update';    
+UPDATE `eav_attribute` SET `frontend_label`='Atualização de Layout' WHERE `frontend_label`='Custom Layout Update';    
 UPDATE `eav_attribute` SET `frontend_label`='Data de Nascimento' WHERE `frontend_label`='Date Of Birth';    
 UPDATE `eav_attribute` SET `frontend_label`='Endereço de Cobrança Padrão' WHERE `frontend_label`='Default Billing Address';    
 UPDATE `eav_attribute` SET `frontend_label`='Ordem de Listagem Padrão dos Produtos' WHERE `frontend_label`='Default Product Listing Sort by';    
