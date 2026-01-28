@@ -2,13 +2,14 @@
 
 Esta é a tradução base mais completa e atualizada para o ecossistema Magento 1.9.x. O objetivo deste projeto é fornecer uma localização impecável, corrigindo termos genéricos e padronizando a experiência de compra para o mercado brasileiro.
 
-# 🚀 Funcionalidades
+## 🚀 Destaques desta tradução
 
     - Tradução Completa: Abrange Frontend e Backend (Admin).
     - Padronização: Termos fiscais e de checkout ajustados para o Brasil.
     - Compatibilidade: Testado em todas as subversões da linha 1.9.x.
 
 ## 🛠️ Como Instalar
+
 ### Método 1: Via Git (Recomendado)
 
 Se você tem acesso ao terminal do seu servidor, execute:
@@ -19,7 +20,7 @@ cp -r temp_trans/* .
 rm -rf temp_trans
 ```
 
-### Método 2: Manual
+### Método 2: Manual (Mais Simples)
 
 - Baixe o arquivo .zip.
 - Extraia o conteúdo.
@@ -52,4 +53,4 @@ Encontrou um erro de digitação ou um termo que pode ser melhorado?
 
 Este projeto está sob a licença MIT - veja o arquivo LICENSE para detalhes.
 
-## ⭐ Gostou do projeto? Considere dar uma estrela no repositório para ajudar na visibilidade!
+### ⭐ Gostou do projeto? Considere dar uma estrela no repositório para ajudar na visibilidade!
