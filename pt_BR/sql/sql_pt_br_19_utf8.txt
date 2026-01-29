@@ -13,6 +13,7 @@ UPDATE `admin_role` SET `role_name`='Administradores' WHERE `role_name`='Adminis
 
 /* catalog_category_entity_varchar */
 /* Root Catalog, Default Category, Products */
+UPDATE `catalog_category_entity_varchar` SET `value` = 'Categoria Padrão' WHERE `entity_type_id` = 3 AND `attribute_id` = 43 AND `store_id` = 0 AND `entity_id` = 2 AND `value` = 'Default Category';
 
 /* cataloginventory_stock */
 /* UPDATE `cataloginventory_stock` SET `stock_name`='Padrão' WHERE `stock_name`='Default'; */
